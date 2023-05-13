@@ -11,11 +11,21 @@ This spreadsheet has been divided into the following sheets:
 
 Use formulas to answer each question. Unless otherwise stated, fill in your answers in the "Analysis" tab.
 
-1. How many total accidents are contained in this dataset?
+1. How many total accidents are contained in this dataset? 
+	*218,319*
+	=COUNTA(Accidents!A2:A218320)
 
 2. What are the earliest and latest records that appear in this dataset?
+	Earliest: 1/1/2015 
+			=min(B2:B218320)
+	Latest: 6/21/22 
+			=max(b2:B218320)
+				
 
-3. a. Create a new column to the right of the "Number of Motor Vehicles" column called "Single or Multiple". This column should contain "Single" if the number of vehicles is 1 and "Multiple" if it involved more than one vehicle.  
+3. a. Create a new column to the right of the "Number of Motor Vehicles" column called "Single or Multiple". This column should contain "Single" if the number of vehicles is 1 and "Multiple" if it involved more than one vehicle. 
+		=IF(C2:C218320<=1, "Single","Multiple") 
+
+
 b. Are there any rows that involved zero vehicles? How many? Make sure that your formula accounts for these cases.  
 c. Investigate the rows that have zero vehicles using the FILTER function in the "Zero Car Crashes" sheet. What do you find?  
 d. What percentage of crashes are single-car?
