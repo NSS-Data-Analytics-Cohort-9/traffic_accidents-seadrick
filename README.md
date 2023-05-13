@@ -26,9 +26,21 @@ Use formulas to answer each question. Unless otherwise stated, fill in your answ
 		=IF(C2:C218320<=1, "Single","Multiple") 
 
 
-b. Are there any rows that involved zero vehicles? How many? Make sure that your formula accounts for these cases.  
+b. Are there any rows that involved zero vehicles? How many? Make sure that your formula accounts for these cases. 
+		*8,555
+		=COUNTIF(Accidents!$C$2:$C$218320, "=0")
+			-COUNTIF(Where do you want to look?, What do you want to look for?)
+				(Number of Motor Vehicles C2:C218320, 0 vehicles)		
+		
+ 
 c. Investigate the rows that have zero vehicles using the FILTER function in the "Zero Car Crashes" sheet. What do you find?  
+
+
+
 d. What percentage of crashes are single-car?
+
+		*15.74%
+		=COUNTIF(Accidents!C2:C218320, 1)/Analysis!B1
 
 4. How many accidents occurred which are hit and run and had at least one injury?
 
