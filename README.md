@@ -44,10 +44,16 @@ d. What percentage of crashes are single-car?
 
 4. How many accidents occurred which are hit and run and had at least one injury?
 
-5. a. What is the overall average number of injuries?  .39%
+		7,535
+		=countifs(i2:i218320, ">=1", k2:k218320, "=true")
+
+5. a. What is the overall average number of injuries?  38.86%  =average(I2:I218320)
 
 
 b. Go to the "Collision Types" sheet and fill in the table to find the total number of crashes, average number of injuries, and total number of injuries per collision type. For each calculation, write a single formula and copy it down the table. What do you find? (Hint: If you're not sure how to answer this question, revisit the "Conditional functions and lookups" chapter of [Data Analysis in Spreadsheets](https://app.datacamp.com/learn/courses/data-analysis-in-spreadsheets).)
+		
+
+
 
 6. Add four new columns, Month, Year, Hour, and Weekday to the right of the Date and Time column. Use the [TEXT function](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c) to extract out the Month, Year, Hour, and Weekday from the "Date and Time" column.  
 
